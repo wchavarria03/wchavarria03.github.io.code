@@ -7,6 +7,7 @@
     "test": "jest ./src",
     "start": "webpack-dev-server --open --hot --mode development --config config/webpack.dev.js",
     "build": "webpack --mode production --config config/webpack.prod.js",
+    "production": "http-server ./docs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -23,7 +24,7 @@
   ],
   "author": "Walter Chavarria",
   "license": "MIT",
-  "homepage": "http://wchavarria03.github.io/wchavarria03.github.io",
+  "homepage": "http://wchavarria03.github.io",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
