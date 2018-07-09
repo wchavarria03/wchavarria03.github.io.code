@@ -7,15 +7,17 @@
     "test": "jest ./src",
     "start": "webpack-dev-server --open --hot --mode development --config config/webpack.dev.js",
     "build": "webpack --mode production --config config/webpack.prod.js",
-    "production": "http-server ./docs",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "production": "http-server ./"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./src/enzyme.setup.js",
     "moduleNameMapper": {
       "@(/.*)$": "<rootDir>/src/$1"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wchavarria03/wchavarria03.github.io.git"
   },
   "keywords": [
     "react",
