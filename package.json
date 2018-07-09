@@ -1,0 +1,62 @@
+{
+  "name": "wchavarria03.github.io",
+  "version": "1.0.0",
+  "description": "Profile Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./src",
+    "start": "webpack-dev-server --open --hot --mode development --config config/webpack.dev.js",
+    "build": "webpack --mode production --config config/webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./src/enzyme.setup.js",
+    "moduleNameMapper": {
+      "@(/.*)$": "<rootDir>/src/$1"
+    }
+  },
+  "keywords": [
+    "react",
+    "profile",
+    "github"
+  ],
+  "author": "Walter Chavarria",
+  "license": "MIT",
+  "homepage": "http://wchavarria03.github.io/wchavarria03.github.io",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.1.0",
+    "node-sass": "^4.9.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-test-renderer": "^16.4.0",
+    "sass-loader": "^7.0.2",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.1",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "gh-pages": "^1.2.0",
+    "react-dev-utils": "^5.0.1",
+    "react-router-dom": "^4.2.2"
+  }
+}
