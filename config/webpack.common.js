@@ -14,7 +14,7 @@ module.exports = {
   },
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve('./dist')
+    path: path.resolve('./docs')
   },
   resolve: {
     alias: {
@@ -66,6 +66,6 @@ module.exports = {
   },
   plugins: [
     htmlPlugin,
-    new CleanWebPackPlugin(['dist']),
+    new CleanWebPackPlugin(['docs']),
   ]
 };
