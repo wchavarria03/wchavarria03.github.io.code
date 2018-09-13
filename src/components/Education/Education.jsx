@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default () => {
+export default () => (
   <div>
-    Dashboard
+    Education
   </div>
-}
+)
